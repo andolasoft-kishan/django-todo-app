@@ -21,7 +21,7 @@ A robust, full-stack Task Management application built with **Python** and **Dja
 - `settings.py`: Configured for security and static file management.
 
 ## ⚙️ Setup & Installation
-1. Clone the repository: `git clone [YOUR_URL]`
+1. Clone the repository: `git clone (https://github.com/KishankJena/django-todo-app.git)`
 2. Create a virtual environment: `python -m venv venv`
 3. Activate venv: `source venv/bin/activate` (Mac/Linux) or `venv\Scripts\activate` (Windows)
 4. Install dependencies: `pip install django`
