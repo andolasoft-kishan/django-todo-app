@@ -25,7 +25,7 @@
             <div class="flex-grow-1 me-2">
               <h5 class="card-title mb-1 text-white fw-bold {% if t.complete %}text-decoration-line-through text-white-50{% endif %}">
                 {{ t.title }}
-                {% if t.created_at <  %}
+                {% if t.created_at %}
               </h5>
               <p class="text-primary small fw-bold mb-2" style="font-size: 0.75rem;">ID: #{{ t.tid }}</p>
               <p class="card-text text-white-50 small" style="line-height: 1.5;">{{ t.desc }}</p>

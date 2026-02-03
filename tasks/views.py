@@ -54,6 +54,9 @@ def delete(request, pk):
     return render(request, 'delete.html', {'todo': todo})
 
 
+from rest_framework import viewsets
+from .serializers import TodoSerializer
+
 @login_required
 def complete_todo(request, pk):
     todo = Todo.objects.get(pk=pk, user=request.user) # Security: ensure it's their todo
@@ -71,6 +74,11 @@ def signup(request):
     else:
         form = UserCreationForm()
     return render(request, 'signup.html', {'form': form})
+
+
+class TodoViewSet(viewsets.ModelViewSet):
+    queryset = Todo.objects.all()
+    serializer_class = TodoSerializer
 
         
 
